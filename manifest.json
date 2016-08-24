@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+
+  "name": "High Wiki",
+  "description": "For when you're high on Wikipedia",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://*.wikipedia.org/wiki/*", "http://*.wikipedia.org/wiki/*"],
+      "js": ["jquery.min.js", "highwiki.js"]
+    }
+  ],
+
+  "permissions": [
+    "activeTab",
+    "https://*.wikipedia.org/wiki/*", "http://*.wikipedia.org/wiki/*"
+  ]
+}
