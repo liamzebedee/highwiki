@@ -2,3 +2,11 @@
 	padding: 1em;
 	border: 1px solid #ffe;
 }
+
+.highwiki-showmore:hover {
+	text-decoration: underline;
+}
+
+.highwik-takeme {
+	color: #333;
+}

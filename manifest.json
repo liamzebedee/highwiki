@@ -13,7 +13,11 @@
   "content_scripts": [
     {
       "matches": ["https://*.wikipedia.org/wiki/*", "http://*.wikipedia.org/wiki/*"],
-      "js": ["jquery.min.js", "singleClick.js", "highwiki.js"],
+      "js": [
+        "jquery.min.js", 
+        "singleClick.js", 
+
+        "bundle.js"],
       "css": ["highwiki.css"]
     }
   ],
